@@ -17,6 +17,51 @@
 
         <app.name>mcspringboot</app.name>
     </properties>
+    
+        <repositories>
+        <repository>
+            <id>central</id>
+            <url>http://192.168.100.193:8070/repository/maven-central/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <url>http://192.168.100.193:8070/repository/spring-snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <url>http://192.168.100.193:8070/repository/spring-milestones/</url>
+        </repository>
+        <repository>
+            <id>repo1</id>
+            <url>http://192.168.100.193:8070/repository/repo1/</url>
+        </repository>
+    </repositories>
+    
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>http://192.168.100.193:8070/repository/maven-central/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <url>http://192.168.100.193:8070/repository/spring-snapshots/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>http://192.168.100.193:8070/repository/spring-milestones/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>repo1</id>
+            <url>http://192.168.100.193:8070/repository/repo1/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
