@@ -1,7 +1,10 @@
-FROM ibmjava:8-sfj
-LABEL maintainer="IBM Java Engineering at IBM Cloud"
+FROM mycluster.icp:8500/microclimate/maven:3-jdk-8-alpine
 
-COPY target/mcspringboot-1.0-SNAPSHOT.jar /app.jar
+WORKDIR /usr/src/app
 
-ENV JAVA_OPTS=""
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+COPY . /usr/src/app
+RUN mvn package
+
+ENV PORT 8080
+EXPOSE $PORT
+CMD [ "sh", "-c", "mvn -Dserver.port=${PORT} spring-boot:run" ]
