@@ -18,7 +18,8 @@
         <app.name>mcspringboot</app.name>
     </properties>
     
-        <repositories>
+    <!-- 내부 저장소 URL로 변경 필요 -->
+    <repositories>
         <repository>
             <id>central</id>
             <url>http://192.168.100.193:8070/repository/maven-central/</url>
@@ -42,6 +43,7 @@
         </repository>
     </repositories>
     
+    <!-- 내부 저장소 URL로 변경 필요 -->
     <pluginRepositories>
         <pluginRepository>
             <id>central</id>
