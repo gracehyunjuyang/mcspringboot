@@ -19,7 +19,7 @@
     </properties>
     
     <!-- 내부 저장소 URL로 변경 필요 -->
-    <repositories>
+    <!--repositories>
         <repository>
             <id>central</id>
             <url>http://192.168.100.193:8070/repository/maven-central/</url>
@@ -41,10 +41,10 @@
             <id>repo1</id>
             <url>http://192.168.100.193:8070/repository/repo1/</url>
         </repository>
-    </repositories>
+    </repositories-->
     
     <!-- 내부 저장소 URL로 변경 필요 -->
-    <pluginRepositories>
+    <!--pluginRepositories>
         <pluginRepository>
             <id>central</id>
             <url>http://192.168.100.193:8070/repository/maven-central/</url>
@@ -63,7 +63,7 @@
             <id>repo1</id>
             <url>http://192.168.100.193:8070/repository/repo1/</url>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
